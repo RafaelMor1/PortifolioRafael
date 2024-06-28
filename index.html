@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <title>Rafael Moreira</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">RM</p>
+                <span>.</span>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link active-link">Início</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link">Sobre Mim</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#projects" class="nav-link">Portifólio</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link">Me contate</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn">Baixar Currículo<i class="uil uil-file-alt"></i></button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+
+        <main class="wrapper">
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="featured-text-card">
+                        <span>Rafael Moreira</span>
+                    </div>
+                    <div class="featured-name">
+                        <p>Olá, eu sou <span class="nav-name" id="featured-name">Programador</span>
+                        <p><span class="typedText"></span></p>
+                        </p>
+                    </div>
+                    <div class="featured-text-info">
+                        <p>Olá, eu sou Rafael Oliveira Moreira, um entusiasta da tecnologia focado em desenvolvimento
+                            web full-stack desde de 2022. Sempre preocupado com a experiência do usuário, atender e
+                            realizar todas as expectativas e tarefas dadas da melhor maneira possível.
+                        </p>
+                    </div>
+                    <div class="featured-text-btn">
+                        <button class="btn blue-btn">Me Contate</button>
+                        <button class="btn">Baixar CV <i class="uil uil-file-alt"></i></button>
+                    </div>
+                    <div class="social_icons">
+                        <div class="icon"><i class="uil uil-instagram"></i></div>
+                        <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                        <div class="icon"><i class="uil uil-github-alt"></i></div>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="./profile.png" alt="avatar">
+                    </div>
+                </div>
+
+            </section>
+            <section class="section" id="about">
+                <div class="top-header">
+                    <h1>Sobre Mim</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="about-info">
+                            <h3>Minha História</h3>
+                            <p>Como um profissional em busca de oportunidades, estou comprometido em evoluir e
+                                contribuir de forma significativa para o sucesso da equipe e da empresa. Embora minha
+                                jornada profissional ainda esteja começando, trago habilidades sólidas de trabalho em
+                                equipe, uma natureza comunicativa e uma disposição para aprender e crescer com meus
+                                colegas. Estou confiante de que, com a oportunidade certa, poderei demonstrar todo o meu
+                                potencial e agregar valor à equipe.
+                            </p>
+                            <div class="about-btn">
+                                <button class="btn">Download CV <i class="uil uil-import"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Frontend</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap</span>
+                                <span>React</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Backend</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>JAVA</span>
+                                <span>PHP</span>
+                                <span>NodeJS</span>
+                                <span>Python</span>
+                                <span>C#</span>
+                                <span>C++</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Banco de Dados</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>MySQL</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="projects">
+                <div class="top-header">
+                    <h1>Portifólio</h1>
+                </div>
+                <div class="project-container">
+                    <div class="project-box">
+                        <i class="uil uil-briefcase-alt"></i>
+                        <h3>Completed</h3>
+                        <label>15+ Finished Projects</label>
+                    </div>
+                    <div class="project-box">
+                        <i class="uil uil-users-alt"></i>
+                        <h3>Clients</h3>
+                        <label>25+ Happy Clients</label>
+                    </div>
+                    <div class="project-box">
+                        <i class="uil uil-award"></i>
+                        <h3>Experience</h3>
+                        <label>7+ Years in the field</label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="contact">
+                <div class="top-header">
+                    <h1>Entre em contato comigo.</h1>
+                    <span>Estou à disposição para discutir oportunidades de colaboração, responder a consultas e
+                        explorar projetos inovadores. Preencha o formulário abaixo, e entrarei em contato rapidamente
+                        para discutir como posso contribuir para o sucesso do seu projeto.</span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contact-info">
+                            <h2>Meu contato <i class="uil uil-corner-right-down"></i></h2>
+                            <p><i class="uil uil-envelope"></i> Email: rafael150305@gmail.com</p>
+                            <p><i class="uil uil-phone"></i> +55 31 99152-3630</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-control">
+                            <div class="form-inputs">
+                                <input type="text" class="input-field" placeholder="Nome:">
+                                <input type="text" class="input-field" placeholder="Email:">
+                            </div>
+                            <div class="text-area">
+                                <textarea placeholder="Mensagem:"></textarea>
+                            </div>
+                            <div class="form-button">
+                                <button class="btn">Enviar Mensagem <i class="uil uil-message"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Rafael Moreira</a> - Todos direitos reservados
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
