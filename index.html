@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./public/style/style.css">
+    <link rel="shortcut icon" href="./public/images/favicon.png" type="image/x-icon">
 
     <title>Rafael Moreira</title>
 </head>
@@ -15,10 +15,6 @@
 <body>
     <div class="container">
         <nav id="header">
-            <div class="nav-logo">
-                <p class="nav-name">RM</p>
-                <span>.</span>
-            </div>
             <div class="nav-menu" id="myNavMenu">
                 <ul class="nav_menu_list">
                     <li class="nav_list">
@@ -30,7 +26,7 @@
                         <div class="circle"></div>
                     </li>
                     <li class="nav_list">
-                        <a href="#projects" class="nav-link">Portifólio</a>
+                        <a href="#projects" class="nav-link">Projetos</a>
                         <div class="circle"></div>
                     </li>
                     <li class="nav_list">
@@ -39,45 +35,51 @@
                     </li>
                 </ul>
             </div>
-            <div class="nav-button">
-                <button class="btn">Baixar Currículo<i class="uil uil-file-alt"></i></button>
-            </div>
-            <div class="nav-menu-btn">
-                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
-            </div>
         </nav>
-
 
         <main class="wrapper">
             <section class="featured-box" id="home">
                 <div class="featured-text">
-                    <div class="featured-text-card">
-                        <span>Rafael Moreira</span>
-                    </div>
                     <div class="featured-name">
                         <p>Olá, eu sou <span class="nav-name" id="featured-name">Programador</span>
                         <p><span class="typedText"></span></p>
                         </p>
                     </div>
                     <div class="featured-text-info">
-                        <p>Olá, eu sou Rafael Oliveira Moreira, um entusiasta da tecnologia focado em desenvolvimento
+                        <p>
+                            Olá, eu sou Rafael Oliveira Moreira, um entusiasta da tecnologia focado em desenvolvimento
                             web full-stack desde de 2022. Sempre preocupado com a experiência do usuário, atender e
                             realizar todas as expectativas e tarefas dadas da melhor maneira possível.
                         </p>
                     </div>
                     <div class="featured-text-btn">
-                        <button class="btn blue-btn">Me Contate</button>
-                        <button class="btn">Baixar CV <i class="uil uil-file-alt"></i></button>
+                        <a href="https://wa.me/5531991523630?text=Ol%C3%A1%21%20Vi%20seu%20portf%C3%B3lio%20online%20e%20fiquei%20muito%20interessado(a)%20nos%20seus%20servi%C3%A7os%20de%20programa%C3%A7%C3%A3o.%20Voc%C3%AA%20teria%20um%20tempo%20para%20conversarmos%20sobre%20um%20projeto%20que%20estou%20planejando%3F%20Acho%20que%20suas%20habilidades%20seriam%20perfeitas%20para%20o%20que%20preciso.%20Obrigado(a)!"
+                            target="_blank" class="btn blue-btn">
+                            Me Contate
+                        </a>
+                        <button class="btn" onclick="baixarCV()">Baixar CV<i class="uil uil-file-alt"></i></button>
                     </div>
                     <div class="social_icons">
-                        <div class="icon"><i class="uil uil-instagram"></i></div>
-                        <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-                        <div class="icon"><i class="uil uil-github-alt"></i></div>
+                        <a href="https://www.instagram.com/rafael.mor_/">
+                            <div class="icon">
+                                <i class="uil uil-instagram"></i>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rafael-moreira-178b76291/">
+                            <div class="icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </div>
+                        </a>
+                        <a href="https://github.com/RafaelMor1">
+                            <div class="icon">
+                                <i class="uil uil-github-alt"></i>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="featured-image">
                     <div class="image">
-                        <img src="./profile.png" alt="avatar">
+                        <img src="./public/images/profile.png" alt="avatar">
                     </div>
                 </div>
 
@@ -97,9 +99,6 @@
                                 colegas. Estou confiante de que, com a oportunidade certa, poderei demonstrar todo o meu
                                 potencial e agregar valor à equipe.
                             </p>
-                            <div class="about-btn">
-                                <button class="btn">Download CV <i class="uil uil-import"></i></button>
-                            </div>
                         </div>
                     </div>
                     <div class="col">
@@ -121,6 +120,7 @@
                             </div>
                             <div class="skills-list">
                                 <span>JAVA</span>
+                                <span>JavaScript</span>
                                 <span>PHP</span>
                                 <span>NodeJS</span>
                                 <span>Python</span>
@@ -143,24 +143,24 @@
 
             <section class="section" id="projects">
                 <div class="top-header">
-                    <h1>Portifólio</h1>
+                    <h1>Meus Projetos</h1>
                 </div>
                 <div class="project-container">
-                    <div class="project-box">
-                        <i class="uil uil-briefcase-alt"></i>
-                        <h3>Completed</h3>
-                        <label>15+ Finished Projects</label>
-                    </div>
-                    <div class="project-box">
-                        <i class="uil uil-users-alt"></i>
-                        <h3>Clients</h3>
-                        <label>25+ Happy Clients</label>
-                    </div>
-                    <div class="project-box">
-                        <i class="uil uil-award"></i>
-                        <h3>Experience</h3>
-                        <label>7+ Years in the field</label>
-                    </div>
+                    <a href="https://github.com/RafaelMor1/VehicleRentalsSystem-OOP" class="project-box">
+                        <i class="uil uil-car"></i>
+                        <h3>Sistema de Aluguel de Veículos</h3>
+                        <label>Confira no GitHub!</label>
+                    </a>
+                    <a href="https://github.com/RafaelMor1/sistema-gestao-empresarial" class="project-box">
+                        <i class="uil uil-chart-line"></i>
+                        <h3>Sistema Gestão Empresarial</h3>
+                        <label>Confira no GitHub!</label>
+                    </a>
+                    <a href="https://github.com/RafaelMor1/desafio-layout-web-precificacao-employ" class="project-box">
+                        <i class="uil uil-palette"></i>
+                        <h3>Desafio Layout Web</h3>
+                        <label>Confira no GitHub!</label>
+                    </a>
                 </div>
             </section>
 
@@ -207,7 +207,7 @@
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="./script.js"></script>
+    <script src="./public/script/script.js"></script>
 </body>
 
 </html>
