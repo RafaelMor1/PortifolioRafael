@@ -105,4 +105,12 @@ function baixarCV() {
   document.body.removeChild(link);
 }
 
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('myNavMenu');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+});
+
 window.addEventListener('scroll', scrollActive)
